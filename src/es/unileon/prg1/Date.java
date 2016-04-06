@@ -22,8 +22,14 @@ public class Date {
 			message.append("No se admiten valores negativos para los años - error dato: " + year + "\n");
 		}
 
+		if ( month >12 ){
+			message.append("No se admiten valores mayores que 12 para los meses - error dato: " + month + "\n");
+		}
 
+		if (monthRight(day, month)== -1 ) {
+			message.append("No se admiten ese dia para determinado mes - error dato: " + day + "/" + month + "\n");
 
+		}
 
 
 		if (message.length() != 0){
@@ -143,12 +149,8 @@ public class Date {
 
 
 
-	private int monthRight () {
+	private int monthRight (int day, int month) {
 	
-		String monthRight= new String (" ");
-
-	
-
 		switch (month) {
 
 		case 1:
