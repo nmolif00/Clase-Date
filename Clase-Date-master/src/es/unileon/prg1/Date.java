@@ -109,7 +109,7 @@ public class Date {
 
 
 // Metodo que imprime el nombre del mes
-	public String monthName (int month) {
+	public String monthName (Date date) {
 
 		String monthNames = new String (" ");
 
@@ -168,7 +168,7 @@ public class Date {
 
 
 // Metodo que comprueba que el dia del mes es correcto	
-	public boolean monthRight (int day, int month) {
+	public boolean monthRight (Date date) {
 		
 		boolean monthRights=false;
 		switch (month) {
@@ -206,7 +206,7 @@ public class Date {
 
 
 // Metodo que imprime la estacion de ese mes
-	public String getSeason (int season) {
+	public String getSeason (Date date) {
 
 		String seasons = new String (" ");
 
